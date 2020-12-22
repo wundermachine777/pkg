@@ -1,6 +1,6 @@
 {
   "name": "@wundermachine777/pkg",
-  "version": "4.4.11",
+  "version": "4.4.12",
   "description": "Package your Node.js project into an executable",
   "main": "lib-es5/index.js",
   "license": "MIT",
