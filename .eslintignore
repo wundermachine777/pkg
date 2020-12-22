@@ -1,1 +1,7 @@
 /lib-es5
+/lib
+/test
+/prelude
+/dictionary
+/examples
+/node_modules
