@@ -218,7 +218,7 @@ function projectToNearby (f) {
 
 function findNativeAddonSyncFreeFromRequire (path) {
   if (!insideSnapshot(path)) throw new Error('UNEXPECTED-10');
-  if (path.slice(-5) !== '.node') return null; // leveldown.node.js
+  if (path.slice(-5) !== '.node' && path.slice(-4) !== '.jsc') return null; // leveldown.node.js
   // check mearby first to prevent .node tampering
   var projector = projectToNearby(path);
   if (require('fs').existsSync(projector)) return projector;
