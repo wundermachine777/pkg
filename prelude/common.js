@@ -92,6 +92,10 @@ exports.isDotNODE = function (file) {
   return path.extname(file) === '.node';
 };
 
+exports.isDotJSC = function (file) {
+  return path.extname(file) === '.jsc';
+}
+
 function replaceSlashes (file, slash) {
   if (/^.:\\/.test(file)) {
     if (slash === '/') {
